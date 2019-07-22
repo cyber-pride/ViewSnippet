@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cpb="http://schemas.android.com/tools"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/logoLayout"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/interview_item_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/alte_haas_grotesk_bold"
+                    android:gravity="start"
+                    android:text="How to use an umbrella"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alte_haas_grotesk_regular"
+                    android:gravity="start"
+                    android:text="How to use an umbrella to use an umbrella to use an umbrella to use an umbrella" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.bluapp.viewsnippet.CircleProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Help"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

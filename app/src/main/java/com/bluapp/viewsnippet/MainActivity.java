@@ -3,8 +3,12 @@ package com.bluapp.viewsnippet;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
@@ -25,5 +29,23 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setPageMargin(20);
         viewPager.setPadding(paddingToSet, 0, paddingToSet, 0);
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_option, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        switch(item.getItemId()){
+            case R.id.action_viewactivity2:
+                startActivity(new Intent(MainActivity.this, ViewActivity2.class));
+                return true;
+        }
+
+        return true;
     }
 }
