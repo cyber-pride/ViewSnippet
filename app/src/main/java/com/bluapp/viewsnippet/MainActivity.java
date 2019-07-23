@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_viewactivity2:
                 startActivity(new Intent(MainActivity.this, ViewActivity2.class));
                 return true;
+
+            case R.id.action_viewactivity3:
+                startActivity(new Intent(MainActivity.this, ExpansionPanelActivity3.class));
+                return true;
         }
 
         return true;

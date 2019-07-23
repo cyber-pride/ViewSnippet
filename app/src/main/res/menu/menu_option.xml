@@ -7,4 +7,10 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_viewactivity3"
+        android:title="@string/expansionpanel"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>
