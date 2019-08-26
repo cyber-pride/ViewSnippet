@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 May, 5:16PM"
+        android:textColor="#3F51B5"
+        android:textSize="14sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regular Diabetes Checkup"
+        android:textColor="#303030"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A disease in which the body's ability to produce or respond to the hormone insulin is impaired"
+        android:textColor="#303030"
+        android:textSize="14sp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/play"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_color="#FF0202"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#ffffff"
+            android:src="@drawable/ic_play"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/calender"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_color="#028102"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#ffffff"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/ic_calender"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_color="#0202CD"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#ffffff"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/ic_camera"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

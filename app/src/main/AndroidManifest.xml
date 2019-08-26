@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ExpansionPanelActivity3"></activity>
+        <activity android:name=".StartConsultationActivity"></activity>
+        <activity android:name=".DocProfileActivity" />
+        <activity android:name=".ExpansionPanelActivity3" />
         <activity android:name=".ViewActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>

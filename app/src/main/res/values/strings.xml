@@ -5,4 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="view2">View 2</string>
     <string name="expansionpanel">Expansion Panel</string>
+    <string name="doctorprofile">Doctor Profile</string>
+    <string name="startconsultation">Start Consultation</string>
 </resources>

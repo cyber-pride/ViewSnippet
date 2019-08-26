@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocProfileActivity"
+    android:background="#DFDFDF">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/profile"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Michelina Bourdelle"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_toStartOf="@id/edit"
+                        android:textColor="#000000"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/edit"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_edit"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/idlabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID : "
+                        android:textSize="17sp"
+                        android:layout_below="@id/profile_name"
+                        android:textColor="#555555"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/idtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2455331"
+                        android:textSize="17sp"
+                        android:layout_below="@id/profile_name"
+                        android:layout_toEndOf="@id/idlabel"
+                        android:textColor="#555555"/>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6F6F6F"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender : "
+                    android:textSize="14sp"
+                    android:textColor="#555555"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/gendertxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="14sp"
+                    android:layout_toEndOf="@id/labelgender"
+                    android:textColor="#2E2E2E"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelheight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height : "
+                    android:textSize="14sp"
+                    android:layout_below="@id/labelgender"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#555555"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/heighttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="162cms"
+                    android:textSize="14sp"
+                    android:layout_below="@id/labelgender"
+                    android:layout_toEndOf="@id/labelheight"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#2E2E2E"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labeldob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB : "
+                    android:textSize="14sp"
+                    android:textColor="#555555"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dobtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29 Sep, 1988"
+                    android:textSize="14sp"
+                    android:layout_toEndOf="@id/labeldob"
+                    android:textColor="#2E2E2E"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight : "
+                    android:textSize="14sp"
+                    android:layout_below="@id/labeldob"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#555555"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/weighttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="127lbs"
+                    android:textSize="15sp"
+                    android:layout_below="@id/labeldob"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/labelweight"
+                    android:textColor="#2E2E2E"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A3A3A3"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/labelemail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_email"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/emailtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#3F51B5"
+                    android:text="michelinabourdelle@gmail.com"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@id/labelemail"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/labelphone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_phone"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/phonetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#3F51B5"
+                        android:text="9948851734"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@id/labelemail"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/labellocation"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_marker"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/locationtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:text="1718, Honeysuckle Lane Colony, St. Thomas mount, chennai, 600077"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@id/labelemail"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/collapse_arrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:civ_border_color="#4052B5"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/profileCard"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/profileCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_collapse_arrow"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/listCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/collapse_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="#ffffff">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultation History"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
