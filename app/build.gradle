@@ -43,6 +43,8 @@ dependencies {
     implementation 'eu.davidea:flexible-adapter-livedata:1.0.0-b3'
     implementation 'eu.davidea:flexible-adapter-databinding:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //onboarding library
+    implementation 'com.codemybrainsout.onboarding:onboarder:1.0.4'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

@@ -3,8 +3,6 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.bluapp.viewsnippet">
 
-    <dist:module dist:instant="true" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartConsultationActivity"></activity>
+        <activity android:name=".OnBoardingUiActivity"></activity>
+        <activity android:name=".StartConsultationActivity" />
         <activity android:name=".DocProfileActivity" />
         <activity android:name=".ExpansionPanelActivity3" />
         <activity android:name=".ViewActivity2" />
@@ -24,5 +23,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <dist:module dist:instant="true" />
 
 </manifest>

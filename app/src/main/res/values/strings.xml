@@ -7,4 +7,5 @@
     <string name="expansionpanel">Expansion Panel</string>
     <string name="doctorprofile">Doctor Profile</string>
     <string name="startconsultation">Start Consultation</string>
+    <string name="onboarding">Onboarding Ui</string>
 </resources>

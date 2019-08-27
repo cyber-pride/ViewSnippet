@@ -25,4 +25,10 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_viewactivity6"
+        android:title="@string/onboarding"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>
