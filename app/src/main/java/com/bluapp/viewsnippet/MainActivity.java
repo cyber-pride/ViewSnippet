@@ -60,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_viewactivity6:
                 startActivity(new Intent(MainActivity.this, OnBoardingUiActivity.class));
                 return true;
+
+            case R.id.action_viewactivity7:
+                startActivity(new Intent(MainActivity.this, PaystackLibActivity.class));
+                return true;
         }
 
         return true;

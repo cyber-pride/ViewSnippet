@@ -4,13 +4,20 @@
     package="com.bluapp.viewsnippet">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OnBoardingUiActivity"></activity>
+        <meta-data
+            android:name="co.paystack.android.PublicKey"
+            android:value="pk_test_335cefe38e3c678493b08f809dac1e08d84975b9" />
+
+        <activity android:name=".PaystackLibActivity"></activity>
+
+        <activity android:name=".OnBoardingUiActivity" />
         <activity android:name=".StartConsultationActivity" />
         <activity android:name=".DocProfileActivity" />
         <activity android:name=".ExpansionPanelActivity3" />
@@ -22,7 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <dist:module dist:instant="true" />
 

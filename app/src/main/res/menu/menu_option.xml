@@ -31,4 +31,10 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_viewactivity7"
+        android:title="@string/paystack"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>
